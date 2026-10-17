@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mahmoud Ibrahim</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/avatar.png">
+<meta name="description" content="Mahmoud Ibrahim — digital nomad creator. UGC, drone footage, content creation, social media management and growth consulting for brands. 115K+ followers, 16M+ views, 21+ countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Figtree:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
+<meta property="og:title" content="Mahmoud Ibrahim">
+<meta property="og:description" content="Digital nomad creator: UGC, drone footage, content creation, social media management and growth consulting.">
+<meta property="og:type" content="website">
+<style>
+/* Layout: soft colour-blocked bands drawn from the photos — pale sky, rice-field pistachio, sunset peach — over warm sand. One deliberate single light look. */
+:root{
+  color-scheme:light;
+  --sky:#D6E7F5; --sky-2:#C4DAEE; --sea:#3D6FC4; --navy:#24304D; --lime:#E2F0C2; --coral:#F7D3C2; --peach-ink:#C65F43; --lav:#E6E1F4; --sand:#FBF7F1; --white:#FFFFFF; --mute:#636C84; --line:#EAE2D6; --shadow:0 18px 40px -22px rgba(36,48,77,.35);
+  --f-display:"Bricolage Grotesque","Arial Black",Arial,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --f-serif:"Instrument Serif",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--sand);color:var(--navy);font:400 17px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--sky)}
+a{color:inherit}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--f-display);margin:0;letter-spacing:-.025em;text-wrap:balance}
+h2{font-size:clamp(2.5rem,6.4vw,4.6rem);font-weight:800;line-height:.95;font-variation-settings:"wdth" 80}
+h3{font-size:1.5rem;font-weight:700;line-height:1.1}
+p{margin:0}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+section{padding-block:clamp(70px,10vw,120px)}
+.tag{display:inline-flex;align-items:center;gap:8px;font:500 .76rem/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;padding:8px 12px;border-radius:999px}
+.lede{font-size:1.12rem;max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 24px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;border:2px solid transparent;cursor:pointer;font-family:var(--f-body);transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-3px) rotate(-1deg)}
+.btn-lime{background:var(--navy);color:var(--white);box-shadow:var(--shadow)}
+.btn-lime:hover{box-shadow:0 22px 44px -20px rgba(36,48,77,.45)}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}
+.btn-navy{background:var(--navy);color:var(--white)}
+:focus-visible{outline:3px solid var(--sea);outline-offset:3px}
+
+/* nav */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--sky);color:var(--navy);border-bottom:1px solid var(--sky-2)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:70px}
+.logo{font:800 1.3rem/1 var(--f-display);text-decoration:none;letter-spacing:-.02em;display:flex;align-items:center;gap:10px}
+.logo b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--white);color:var(--sea);font-size:.95rem}
+nav.links{display:flex;gap:28px;align-items:center}
+nav.links a{text-decoration:none;font-weight:600;font-size:.96rem;opacity:.88}
+nav.links a:hover{opacity:1;color:var(--sea)}
+.menu-btn{display:none;background:none;border:1.5px solid var(--navy);border-radius:999px;padding:8px 16px;color:var(--navy);font:600 .9rem var(--f-body)}
+@media (max-width:880px){
+  nav.links{display:none;position:absolute;top:70px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:18px;background:var(--sky);border-bottom:1px solid var(--sky-2);padding:22px max(18px,env(safe-area-inset-right,0px)) 26px max(18px,env(safe-area-inset-left,0px))}
+  nav.links.open{display:flex}
+  .menu-btn{display:block}
+  .top .nav-cta{display:none}
+}
+
+/* hero */
+.hero{background:var(--sky);color:var(--navy);padding-block:clamp(36px,6vw,72px) 0;overflow:hidden;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,64px);align-items:end}
+.hero-copy{padding-bottom:clamp(48px,7vw,96px)}
+.hero .tag{background:rgba(255,255,255,.7);color:var(--navy)}
+.hero .tag i{width:8px;height:8px;border-radius:50%;background:#7FB24A;display:inline-block;box-shadow:0 0 0 4px rgba(127,178,74,.25)}
+.hero h1{font-size:clamp(3.4rem,9.6vw,8rem);font-weight:800;line-height:.86;margin-top:24px;font-variation-settings:"wdth" 78}
+.hero h1 .hl{color:var(--sea)}
+.hero h1 .sq{display:inline-block;background:var(--coral);color:var(--navy);padding:0 .14em;border-radius:.12em;transform:rotate(-2.5deg)}
+.hero .lede{margin-top:28px;color:var(--mute)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-photo{position:relative;align-self:stretch;min-width:0}
+.hero-photo .frame{border-radius:28px 28px 0 0;overflow:hidden;height:100%;min-height:520px;max-height:720px}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:62% 45%}
+.sticker{position:absolute;background:var(--white);color:var(--navy);border-radius:16px;padding:12px 16px;box-shadow:var(--shadow);font-weight:700;line-height:1.15}
+.sticker small{display:block;font:500 .68rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:4px}
+.sticker.s1{left:-28px;top:12%;transform:rotate(-5deg)}
+.sticker.s2{right:18px;bottom:14%;transform:rotate(4deg);background:var(--lime)}
+.sticker.s2 small{color:var(--navy);opacity:.7}
+.sticker b{font:800 1.7rem/1 var(--f-display)}
+@media (prefers-reduced-motion:no-preference){
+  .sticker{animation:bob 5s ease-in-out infinite}
+  .sticker.s2{animation-delay:-2.5s}
+}
+@keyframes bob{50%{translate:0 -8px}}
+@media (max-width:880px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-copy{padding-bottom:8px}
+  .hero-photo .frame{min-height:0;aspect-ratio:4/5;max-height:none}
+  .sticker.s1{left:12px}
+}
+
+/* marquee */
+.marquee{background:var(--lime);color:var(--navy);overflow:hidden}
+.marquee-track{display:flex;gap:0;width:max-content;padding-block:16px}
+.marquee span{font:800 clamp(1.3rem,3vw,2rem)/1 var(--f-display);text-transform:uppercase;letter-spacing:-.01em;padding-inline:22px;display:flex;align-items:center;gap:22px;white-space:nowrap}
+.marquee span::after{content:"";width:12px;height:12px;border-radius:50%;background:var(--peach-ink);opacity:.55}
+@media (prefers-reduced-motion:no-preference){.marquee-track{animation:slide 38s linear infinite}}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* numbers */
+.numbers{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-1px}
+.num{background:var(--white);border-radius:22px;padding:26px 24px;display:grid;gap:6px;border:1px solid var(--line);box-shadow:var(--shadow)}
+.num b{font:800 clamp(2.4rem,5vw,3.4rem)/1 var(--f-display);font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.num span{color:var(--mute);font-weight:500}
+.num:nth-child(1) b{color:var(--sea)}.num:nth-child(2) b{color:var(--peach-ink)}.num:nth-child(3) b{color:#5E8F35}.num:nth-child(4) b{color:var(--navy)}
+@media (max-width:880px){.numbers{grid-template-columns:1fr 1fr}}
+.platforms{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.platforms a{display:inline-flex;gap:8px;align-items:baseline;padding:10px 16px;border-radius:999px;background:var(--white);border:1.5px solid var(--line);text-decoration:none;font-weight:600}
+.platforms a small{font:500 .78rem var(--f-mono);color:var(--mute)}
+.platforms a:hover{border-color:var(--navy)}
+
+/* services */
+.sec-head{display:grid;gap:18px;margin-bottom:46px}
+.sec-head .tag{justify-self:start;background:var(--white);color:var(--sea);border:1px solid var(--line)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.svc{border-radius:24px;padding:30px 28px;display:grid;grid-template-rows:auto auto 1fr auto;gap:14px;min-width:0;transition:transform .2s ease}
+.svc:hover{transform:translateY(-4px) rotate(-.5deg)}
+.svc .ix{font:500 .75rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;opacity:.75}
+.svc p{opacity:.9}
+.svc ul{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-weight:500;font-size:.95rem}
+.svc li::before{content:"→ ";opacity:.7}
+.svc a{font-weight:700;text-decoration:none;border-top:1px solid rgba(36,48,77,.18);color:var(--sea);padding-top:14px;opacity:.95}
+.svc a:hover{opacity:1}
+.svc.sky{background:var(--sky);color:var(--navy)}
+.svc.lime{background:var(--lime);color:var(--navy)}
+.svc.coral{background:var(--coral);color:var(--navy)}
+.svc.navy{background:var(--lav);color:var(--navy)}
+.svc.white{background:var(--white);color:var(--navy);border:1px solid var(--line)}
+@media (max-width:960px){.services{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.services{grid-template-columns:1fr}}
+
+/* brand-on-the-road (field photo) */
+.road{background:var(--coral);color:var(--navy)}
+.road .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(32px,6vw,80px);align-items:center}
+.road-photo{position:relative;min-width:0}
+.road-photo .frame{border-radius:28px;overflow:hidden;aspect-ratio:3/4;max-width:100%;transform:rotate(-2deg);border:8px solid var(--white);box-shadow:var(--shadow)}
+.road-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.brand-slot{position:absolute;left:4%;top:54%;background:var(--white);color:var(--navy);border:2px dashed var(--sea);border-radius:16px;padding:14px 18px;font:800 1.35rem/1.05 var(--f-display);transform:rotate(-6deg);box-shadow:var(--shadow)}
+.brand-slot small{display:block;font:500 .66rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--sea);margin-bottom:4px}
+.road .tag{background:var(--white);color:var(--peach-ink)}
+.road h2{margin-top:20px}
+.road h2 em{font-style:normal;color:var(--peach-ink)}
+.road .lede{margin-top:22px;color:var(--mute)}
+.fits{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.fits div{background:rgba(255,255,255,.6);border:1px solid rgba(255,255,255,.9);border-radius:16px;padding:16px 18px}
+.fits b{display:block;font-weight:700;margin-bottom:3px}
+.fits span{color:var(--mute);font-size:.94rem}
+@media (max-width:880px){.road .wrap{grid-template-columns:1fr}.road-photo{max-width:440px}.fits{grid-template-columns:1fr}}
+
+/* case */
+.case{background:var(--lime);color:var(--navy)}
+.case .wrap{display:grid;grid-template-columns:auto 1fr;gap:clamp(28px,6vw,80px);align-items:center}
+.case-num{font:800 clamp(7rem,22vw,16rem)/.78 var(--f-display);letter-spacing:-.05em;font-variation-settings:"wdth" 75;color:#5E8F35}
+.case-num small{display:block;font-size:.16em;letter-spacing:.02em;margin-top:14px;color:var(--navy);font-variation-settings:"wdth" 100}
+.case .tag{background:var(--white);color:#5E8F35}
+.case h2{margin-top:18px}
+.case p{margin-top:18px;max-width:54ch;font-size:1.08rem}
+.case dl{display:flex;flex-wrap:wrap;gap:14px 36px;margin:28px 0 0}
+.case dt{font:500 .72rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;opacity:.8}
+.case dd{margin:4px 0 0;font-weight:700}
+@media (max-width:880px){.case .wrap{grid-template-columns:1fr}}
+
+/* footage */
+.footage .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,5vw,64px);align-items:start}
+.countries{display:flex;flex-wrap:wrap;gap:9px;margin-top:28px}
+.countries button{font:600 .92rem var(--f-body);padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--white);color:var(--navy);cursor:pointer;transition:transform .12s}
+.countries button:hover{transform:translateY(-2px)}
+.countries button[aria-pressed="true"]{background:var(--sea);color:var(--white);border-color:var(--sea)}
+.req{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow);position:sticky;top:calc(env(safe-area-inset-top,0px) + 90px)}
+.req h3{margin-bottom:10px}
+.req p{color:var(--mute);min-height:4.8em}
+.req .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.specs{margin-top:22px;display:grid;gap:10px;font-size:.95rem}
+.specs div{display:flex;gap:12px;align-items:baseline;border-top:1px solid var(--line);padding-top:10px}
+.specs dt{font:500 .72rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--mute);min-width:96px}
+.specs dd{margin:0}
+@media (max-width:880px){.footage .wrap{grid-template-columns:1fr}.req{position:static}}
+
+/* trips */
+.trips-band{background:var(--sky)}
+.trips-band .sec-head .tag{background:var(--white);color:var(--sea)}
+.trips{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.trip{background:var(--white);border:1px solid var(--sky-2);box-shadow:var(--shadow);border-radius:22px;padding:22px;display:grid;gap:10px;grid-template-rows:auto 1fr auto;text-decoration:none;transition:transform .18s}
+.trip:hover{transform:translateY(-4px) rotate(.6deg)}
+.trip .when{font:500 .72rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--mute)}
+.trip h3{font-size:1.35rem}
+.trip .price{display:flex;justify-content:space-between;align-items:baseline;border-top:1.5px solid var(--line);padding-top:12px;font-weight:700}
+.trip .price small{font-weight:500;color:var(--mute)}
+@media (max-width:960px){.trips{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.trips{grid-template-columns:1fr}}
+.trips-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:30px}
+.trips-cta p{font-weight:600}
+
+/* speaking + about */
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px)}
+.about p{margin-top:16px;font-size:1.06rem;max-width:56ch}
+.talks{margin-top:26px;display:grid;gap:0;border-top:1px solid var(--navy)}
+.talk{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line)}
+.talk .yr{font:500 .85rem var(--f-mono);color:var(--mute)}
+.talk b{font:700 1.15rem var(--f-display)}
+.talk small{display:block;color:var(--mute)}
+.talk a{font-weight:700;text-decoration:none;color:var(--sea);white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{padding:8px 13px;border-radius:999px;background:var(--white);border:1.5px solid var(--line);font-weight:600;font-size:.9rem}
+@media (max-width:880px){.about .wrap{grid-template-columns:1fr}}
+
+/* quotes */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.quote{margin:0;padding:28px;border-radius:24px;background:var(--white);display:grid;gap:18px;grid-template-rows:1fr auto;border:1px solid var(--line);box-shadow:var(--shadow)}
+.quote:nth-child(2){background:var(--lav);border-color:var(--lav)}
+.quote p{font:600 1.18rem/1.4 var(--f-display);letter-spacing:-.01em}
+.quote footer{font:500 .76rem var(--f-mono);text-transform:uppercase;letter-spacing:.06em;opacity:.75}
+@media (max-width:880px){.quotes{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--sky);color:var(--navy)}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,72px);align-items:start}
+.contact h2{font-size:clamp(3rem,8.5vw,6.2rem);font-variation-settings:"wdth" 76}
+.contact h2 span{color:var(--sea)}
+.contact .lede{margin-top:20px;color:var(--mute)}
+.cards{display:grid;gap:12px}
+.ccard{background:var(--white);color:var(--navy);border-radius:18px;padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center}
+.ccard small{font:500 .7rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--mute);grid-column:1/-1}
+.ccard .val{font-weight:700;user-select:all;overflow-wrap:anywhere;min-width:0}
+.ccard button,.ccard a.go{font:700 .85rem var(--f-body);padding:9px 14px;border-radius:999px;border:0;background:var(--sky);color:var(--navy);cursor:pointer;text-decoration:none;white-space:nowrap}
+@media (max-width:880px){.contact .wrap{grid-template-columns:1fr}}
+
+footer.site{background:var(--navy);color:rgba(255,255,255,.7);padding-block:30px}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:.9rem}
+footer.site nav{display:flex;flex-wrap:wrap;gap:20px}
+footer.site a{text-decoration:none}
+footer.site a:hover{color:var(--white)}
+.logo .avatar{width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 2px var(--white);transition:transform .3s ease}
+.logo:hover .avatar{transform:rotate(-12deg) scale(1.08)}
+
+/* gen z layer: lowercase heads, serif-italic accents, tilted stickers, DM-style reviews */
+h1,h2{text-transform:lowercase;letter-spacing:-.04em}
+.it{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em;font-variation-settings:normal}
+.tag{font:600 .88rem/1 var(--f-body);letter-spacing:0;text-transform:lowercase}
+.sec-head .tag,.road .tag,.case .tag{transform:rotate(-2.5deg);box-shadow:var(--shadow)}
+.num:nth-child(odd){transform:rotate(-1.4deg)}.num:nth-child(even){transform:rotate(1.4deg)}
+.num{transition:transform .2s ease}.num:hover{transform:rotate(0) scale(1.03)}
+.hero .tag i{animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.hero .tag i{animation:none}}
+.road h2 .it{color:var(--peach-ink)}
+.quote{border-radius:26px 26px 26px 8px}
+.quote:nth-child(2){border-radius:26px 26px 8px 26px}
+.quote footer{display:flex;align-items:center;gap:8px;text-transform:lowercase;letter-spacing:0;font-family:var(--f-body);font-weight:600;font-size:.88rem}
+.quote footer::before{content:"";width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--coral),var(--sky-2))}
+.btn{text-transform:lowercase}
+.process-box{background:var(--white);border:1px solid var(--line);border-radius:32px;padding:clamp(28px,5vw,56px);box-shadow:var(--shadow)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.steps li{background:var(--sand);border-radius:22px;padding:22px;display:grid;gap:8px;align-content:start}
+.steps li:nth-child(1){background:var(--sky)}.steps li:nth-child(2){background:var(--lime)}.steps li:nth-child(3){background:var(--coral)}.steps li:nth-child(4){background:var(--lav)}
+.steps b{font:800 2.4rem/1 var(--f-display);letter-spacing:-.04em;opacity:.55;font-variant-numeric:tabular-nums}
+.steps p{color:var(--mute);font-size:.96rem}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top"><img class="avatar" src="img/avatar.png" alt="" width="40" height="40">Mahmoud Ibrahim</a>
+    <nav class="links" id="nav">
+      <a href="#services">Services</a>
+      <a href="#process">For companies</a>
+      <a href="#brands">Collabs</a>
+      <a href="#footage">Footage</a>
+      <a href="#trips">Trips</a>
+      <a href="#about">About</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <a class="btn btn-lime nav-cta" href="#contact" style="padding:10px 18px">let's talk</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="tag"><i></i>online now · somewhere in asia</span>
+      <h1>my office has <span class="hl it">no walls</span>, just <span class="sq">views</span></h1>
+      <p class="lede">hey, i'm mahmoud 👋 a tunisian creator working from beaches, rice fields and wherever the wifi hits. i make ugc and drone content for travel brands, help companies grow with content, social media and strategy, and 115K+ people watch me prove you don't need an office to build a career.</p>
+      <div class="ctas">
+        <a class="btn btn-lime" href="#contact">let's make something →</a>
+        <a class="btn btn-line" href="#services">see the menu</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="img/palm.webp" alt="Mahmoud sitting on a leaning palm tree over turquoise water" width="1080" height="1440"></div>
+      <div class="sticker s1"><small>today's office</small>palm tree, ocean view 🌴</div>
+      <div class="sticker s2"><small>views so far 👀</small><b>16M+</b></div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-label="Countries I have worked from">
+  <div class="marquee-track">
+    <span>Indonesia</span><span>Philippines</span><span>Japan</span><span>Vietnam</span><span>Thailand</span><span>Malaysia</span><span>Cambodia</span><span>Sri Lanka</span><span>Tunisia</span><span>Morocco</span><span>Jordan</span><span>Turkey</span><span>UAE</span><span>Oman</span><span>Egypt</span><span>France</span>
+    <span aria-hidden="true">Indonesia</span><span aria-hidden="true">Philippines</span><span aria-hidden="true">Japan</span><span aria-hidden="true">Vietnam</span><span aria-hidden="true">Thailand</span><span aria-hidden="true">Malaysia</span><span aria-hidden="true">Cambodia</span><span aria-hidden="true">Sri Lanka</span><span aria-hidden="true">Tunisia</span><span aria-hidden="true">Morocco</span><span aria-hidden="true">Jordan</span><span aria-hidden="true">Turkey</span><span aria-hidden="true">UAE</span><span aria-hidden="true">Oman</span><span aria-hidden="true">Egypt</span><span aria-hidden="true">France</span>
+  </div>
+</div>
+
+<section style="padding-block:clamp(48px,7vw,80px)">
+  <div class="wrap">
+    <div class="numbers">
+      <div class="num"><b>115K+</b><span>followers on 5 platforms</span></div>
+      <div class="num"><b>16M+</b><span>views on my content</span></div>
+      <div class="num"><b>21+</b><span>countries filmed</span></div>
+      <div class="num"><b>4×</b><span>TEDx speaker</span></div>
+    </div>
+    <div class="platforms">
+      <a href="https://www.tiktok.com/@mahmoud.ibraahim" target="_blank" rel="noopener">TikTok <small>61K+</small></a>
+      <a href="https://www.instagram.com/mahmoud.ibraahim/" target="_blank" rel="noopener">Instagram <small>31K+</small></a>
+      <a href="https://www.youtube.com/@tha9afa3aama" target="_blank" rel="noopener">YouTube <small>9.3K</small></a>
+      <a href="#contact">Facebook <small>8.8K</small></a>
+      <a href="https://www.linkedin.com/in/mahmoud-ibraahim/" target="_blank" rel="noopener">LinkedIn <small>5K+</small></a>
+    </div>
+  </div>
+</section>
+
+<section id="services" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">what i do ✦</span>
+      <h2>content and strategy that make brands <span class="it">grow</span></h2>
+      <p class="lede">Travel brands hire me to make places look unmissable. Companies hire me to grow faster online. Same eye, same energy.</p>
+    </div>
+    <div class="services">
+      <article class="svc sky"><span class="ix">Most requested</span><h3>UGC videos</h3><p>Vertical videos for your ads and socials, filmed on location with a hook in the first second.</p><ul><li>Reels and TikTok formats</li><li>Voiceover in AR, EN or FR</li><li>Raw footage on request</li></ul><a href="#contact">Get a quote</a></article>
+      <article class="svc lime"><span class="ix">Aerial</span><h3>Drone &amp; travel footage</h3><p>4K drone and ground footage from 21+ countries, licensed for your campaign, film or website.</p><ul><li>Existing library by country</li><li>Custom shoots on my route</li><li>Commercial licence</li></ul><a href="#footage">Request footage</a></article>
+      <article class="svc coral"><span class="ix">Audience</span><h3>Creator collabs</h3><p>Your place or product featured on my channels, in front of people who actually travel.</p><ul><li>TikTok, Instagram, YouTube</li><li>Reels and Stories bundles</li><li>Media kit on request</li></ul><a href="#brands">See how it works</a></article>
+      <article class="svc navy"><span class="ix">DIGIVOLUTION</span><h3>Growth consulting</h3><p>A clear plan to grow your brand faster: positioning, offers, funnels and paid ads, built on 30+ projects.</p><ul><li>Brand and market audit</li><li>Growth strategy and Meta Ads</li><li>Monthly check-ins on results</li></ul><a href="#contact">Book a strategy call</a></article>
+      <article class="svc white"><span class="ix">For companies</span><h3>Content creation</h3><p>Photos, reels and short videos made for your brand, from the script to the final edit, ready to post or run as ads.</p><ul><li>Content strategy and scripts</li><li>Filming and editing</li><li>Arabic, English and French versions</li></ul><a href="#contact">Get a quote</a></article>
+      <article class="svc sky"><span class="ix">Monthly plans</span><h3>Social media management</h3><p>I run your Instagram, TikTok, Facebook and LinkedIn so you can focus on running the business.</p><ul><li>Content calendar and posting</li><li>Replies, comments and DMs</li><li>Monthly growth report</li></ul><a href="#process">See how it works</a></article>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="padding-top:0">
+  <div class="wrap">
+    <div class="process-box">
+      <div class="sec-head" style="margin-bottom:34px">
+        <span class="tag">for companies 📈</span>
+        <h2>how we <span class="it">grow</span> your brand</h2>
+        <p class="lede">Consulting, content and social media in one plan, run by me and my DIGIVOLUTION team.</p>
+      </div>
+      <ol class="steps">
+        <li><b>01</b><h3>Audit</h3><p>We look at your accounts, your competitors and your numbers to find what's holding you back.</p></li>
+        <li><b>02</b><h3>Strategy</h3><p>You get a 90-day plan with clear goals: followers, leads or sales.</p></li>
+        <li><b>03</b><h3>Create &amp; post</h3><p>We make the content and publish it every week across your platforms.</p></li>
+        <li><b>04</b><h3>Grow &amp; report</h3><p>A monthly report on reach, leads and sales, then we double down on what works.</p></li>
+      </ol>
+      <div style="margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;align-items:center"><a class="btn btn-lime" href="#contact">book a free strategy call →</a><span style="color:var(--mute);font-weight:500">For startups, hotels, schools, restaurants and lifestyle brands.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="road" id="brands">
+  <div class="wrap">
+    <div class="road-photo">
+      <div class="frame"><img src="img/field.webp" alt="Mahmoud smiling in a green rice field with hills behind, hands held out as if presenting something" width="1400" height="1866" loading="lazy"></div>
+      <div class="brand-slot"><small>reserved spot</small>ur brand<br>goes here ✨</div>
+    </div>
+    <div>
+      <span class="tag">for brands 🤝</span>
+      <h2>bring your brand <span class="it">on the road</span></h2>
+      <p class="lede">My audience follows my route in real time and asks where I stay, what I book and what I pack. When I feature you, it lands as a recommendation from a friend, not an ad.</p>
+      <div class="fits">
+        <div><b>Hotels &amp; villas</b><span>Room tours, sunrise drone shots, "where I stayed" reels</span></div>
+        <div><b>Tours &amp; activities</b><span>The experience filmed from the traveller's eyes</span></div>
+        <div><b>Co-working &amp; cafés</b><span>Digital nomad day-in-the-life content</span></div>
+        <div><b>Travel apps &amp; gear</b><span>Real use on the road: eSIMs, bags, cameras, booking apps</span></div>
+      </div>
+      <div style="margin-top:30px"><a class="btn btn-lime" href="#contact">Ask for my media kit</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="case" id="case">
+  <div class="wrap">
+    <div class="case-num">6M<small>views · one campaign</small></div>
+    <div>
+      <span class="tag">case study · bali 🔥</span>
+      <h2>xtreme park bali went <span class="it">viral</span></h2>
+      <p>An adventure park wanted travellers to find it before they even landed in Bali. I directed the influencer campaign and filmed the content on site, built around the moments people love to share. The videos passed six million views.</p>
+      <dl>
+        <div><dt>Role</dt><dd>Concept, filming, campaign</dd></div>
+        <div><dt>Platforms</dt><dd>TikTok, Instagram</dd></div>
+        <div><dt>Result</dt><dd>6M+ views</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="footage" id="footage">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="tag">footage library 🎥</span>
+        <h2>need shots from <span class="it">somewhere?</span></h2>
+        <p class="lede">Pick the countries you need. I'll send a selection of drone and ground clips with licence options.</p>
+      </div>
+      <div class="countries" id="countries" aria-label="Choose countries">
+        <button aria-pressed="false">Indonesia</button><button aria-pressed="false">Philippines</button><button aria-pressed="false">Japan</button><button aria-pressed="false">Vietnam</button><button aria-pressed="false">Thailand</button><button aria-pressed="false">Malaysia</button><button aria-pressed="false">Cambodia</button><button aria-pressed="false">Sri Lanka</button><button aria-pressed="false">Tunisia</button><button aria-pressed="false">Morocco</button><button aria-pressed="false">Jordan</button><button aria-pressed="false">Turkey</button><button aria-pressed="false">UAE</button><button aria-pressed="false">Oman</button><button aria-pressed="false">Egypt</button><button aria-pressed="false">France</button>
+      </div>
+      <dl class="specs">
+        <div><dt>Formats</dt><dd>4K, horizontal and vertical</dd></div>
+        <div><dt>Licence</dt><dd>Per clip or per project: web, social, ads, film</dd></div>
+        <div><dt>Custom</dt><dd>Book a shoot on my upcoming route</dd></div>
+      </dl>
+    </div>
+    <div class="req">
+      <h3>Your footage request</h3>
+      <p id="reqText">Tap a country on the left to start your request.</p>
+      <div class="row">
+        <button class="btn btn-navy" id="reqCopy" style="padding:12px 20px">Copy request</button>
+        <a class="btn btn-line" href="https://wa.me/21623649914" target="_blank" rel="noopener" style="padding:12px 20px">WhatsApp ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trips-band" id="trips">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">travel with me ✈️</span>
+      <h2>don't just watch. <span class="it">come along.</span></h2>
+      <p class="lede">Through The Traveler Experience I lead small groups to the places you see in my videos.</p>
+    </div>
+    <div class="trips">
+      <a class="trip" href="https://thetravelerexperience.com/trips/sri-lanka-whales-waves-wildcats" target="_blank" rel="noopener"><span class="when">11 days · Dec</span><h3>Sri Lanka: Whales, Waves &amp; Wildcats</h3><span class="price">from €1,190 <small>6 spots</small></span></a>
+      <a class="trip" href="https://thetravelerexperience.com/trips/vietnam-new-year-starts-here" target="_blank" rel="noopener"><span class="when">10 days · Dec–Apr</span><h3>Vietnam: The New Year Starts Here</h3><span class="price">from €1,290 <small>7 spots</small></span></a>
+      <a class="trip" href="https://thetravelerexperience.com/trips/philippines-chasing-islands-falls" target="_blank" rel="noopener"><span class="when">14 days · Jan–Feb</span><h3>Philippines: Chasing Islands &amp; Falls</h3><span class="price">from €1,490 <small>6 spots</small></span></a>
+      <a class="trip" href="https://thetravelerexperience.com/trips/japan-the-dream-trip" target="_blank" rel="noopener"><span class="when">11 days · 16–26 Mar</span><h3>Japan: The Dream Trip</h3><span class="price">from €2,190 <small>5 spots</small></span></a>
+    </div>
+    <div class="trips-cta"><p>Rated 4.8/5 by 30+ travellers.</p><a class="btn btn-navy" href="https://thetravelerexperience.com" target="_blank" rel="noopener">All trips ↗</a></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div>
+      <div class="sec-head" style="margin-bottom:0"><span class="tag">about me</span><h2>from 9-to-5 plans to a <span class="it">one-way ticket</span></h2></div>
+      <p>I studied civil engineering, switched to e-business, and built my first company before I graduated. Then I took my work on the road and never brought it back.</p>
+      <p>Today I run my agency DIGIVOLUTION, teach digital marketing at university level, and film everything along the way. In a past life I founded Mimos Cube, Tunisia's first Rubik's Cube club, which is still the story behind my first TEDx talk.</p>
+      <div class="chips"><span>CEO, DIGIVOLUTION</span><span>University instructor</span><span>Drone pilot</span><span>Arabic · English · French</span><span>Founder, Mimos Cube</span></div>
+    </div>
+    <div>
+      <h3>On stage</h3>
+      <div class="talks">
+        <div class="talk"><span class="yr">2024</span><div><b>TEDxTunis</b><small>Tunis, Tunisia</small></div><span></span></div>
+        <div class="talk"><span class="yr">2021</span><div><b>TEDxISETBizerte</b><small>Bizerte, Tunisia</small></div><span></span></div>
+        <div class="talk"><span class="yr">2021</span><div><b>TEDxPiloteAriana</b><small>Life of a Rubik's Cube in Tunisia</small></div><a href="https://www.ted.com/talks/mahmoud_ibrahim_life_of_a_rubik_s_cube_in_tunisia" target="_blank" rel="noopener">Watch ↗</a></div>
+        <div class="talk"><span class="yr">2019</span><div><b>TEDxSidiBouSaid</b><small>Sidi Bou Said, Tunisia</small></div><span></span></div>
+      </div>
+      <p style="margin-top:20px;color:var(--mute)">Also a speaker, mentor or judge at 50+ events, including Hult Prize, Enactus, IEEE, AIESEC and Founder Institute.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">receipts 🧾</span><h2>the <span class="it">reviews</span> are in</h2></div>
+    <div class="quotes">
+      <figure class="quote"><p>"Mahmoud is truly exceptional. He connects ideas with action, content with meaning, and strategy with human insight."</p><footer>Wissem Oueslati · LinkedIn</footer></figure>
+      <figure class="quote"><p>"He took us off the beaten path to show rare and gorgeous spots we never would have discovered on our own."</p><footer>Chayma, 26 · Bali</footer></figure>
+      <figure class="quote"><p>"More than breathtaking places, it gave me confidence, unforgettable memories, and a community for life."</p><footer>Sondos, 38 · Banggai, Indonesia</footer></figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <h2>where should we <span class="it">shoot next?</span></h2>
+      <p class="lede">Send me your brand, the place, your deadline and a budget range. I reply within 48 hours, from whatever time zone I'm in this week.</p>
+    </div>
+    <div class="cards">
+      <div class="ccard"><small>Email</small><span class="val">mahmoud.digivolution@gmail.com</span><button data-copy="mahmoud.digivolution@gmail.com">Copy</button></div>
+      <div class="ccard"><small>WhatsApp</small><span class="val">+216 23 649 914</span><a class="go" href="https://wa.me/21623649914" target="_blank" rel="noopener">Chat ↗</a></div>
+      <div class="ccard"><small>Instagram</small><span class="val">@mahmoud.ibraahim</span><a class="go" href="https://www.instagram.com/mahmoud.ibraahim/" target="_blank" rel="noopener">DM ↗</a></div>
+      <div class="ccard"><small>TikTok</small><span class="val">@mahmoud.ibraahim</span><a class="go" href="https://www.tiktok.com/@mahmoud.ibraahim" target="_blank" rel="noopener">Follow ↗</a></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Mahmoud Ibrahim · DIGIVOLUTION</span>
+    <nav>
+      <a href="https://www.tiktok.com/@mahmoud.ibraahim" target="_blank" rel="noopener">TikTok</a>
+      <a href="https://www.instagram.com/mahmoud.ibraahim/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.youtube.com/@tha9afa3aama" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://www.linkedin.com/in/mahmoud-ibraahim/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://thetravelerexperience.com" target="_blank" rel="noopener">The Traveler Experience</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('nav');
+  btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')})});
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  function flash(el){var t=el.textContent;el.textContent='Copied';setTimeout(function(){el.textContent=t},1600)}
+  function selectText(node){try{var r=document.createRange();r.selectNodeContents(node);var s=getSelection();s.removeAllRanges();s.addRange(r)}catch(e){}}
+  function copy(text,el,node){try{navigator.clipboard.writeText(text).then(function(){flash(el)},function(){selectText(node)})}catch(e){selectText(node)}}
+  document.querySelectorAll('[data-copy]').forEach(function(b){b.addEventListener('click',function(){copy(b.dataset.copy,b,b.parentNode.querySelector('.val'))})});
+  var picked=[],txt=document.getElementById('reqText');
+  document.querySelectorAll('#countries button').forEach(function(b){
+    b.addEventListener('click',function(){
+      var on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);
+      var c=b.textContent;picked=on?picked.concat(c):picked.filter(function(x){return x!==c});
+      txt.textContent=picked.length?"Hi Mahmoud, I'd like drone and travel footage from "+picked.join(', ')+". Project: … Usage: … Deadline: …":"Tap a country on the left to start your request.";
+    });
+  });
+  document.getElementById('reqCopy').addEventListener('click',function(){copy(txt.textContent,this,txt)});
+})();
+</script>
+</body>
+</html>
